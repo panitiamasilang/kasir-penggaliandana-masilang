@@ -27,7 +27,7 @@
         .app-header h2 { margin: 0; color: #ffffff; font-size: 28px; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 12px; text-transform: uppercase; letter-spacing: 1px; }
         .app-header h3 { margin: 8px 0 0 0; color: #94a3b8; font-size: 15px; font-weight: 400; }
 
-        /* STYLE HALAMAN LOGIN PREMIUM */
+        /* STYLE HALAMAN LOGIN PREMIUM & COPYRIGHT */
         .login-wrapper { display: flex; justify-content: center; align-items: center; min-height: 80vh; }
         .login-container { width: 100%; max-width: 400px; background: white; padding: 40px 35px; border-radius: 20px; box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15); border-top: 6px solid var(--gold); text-align: center; }
         .login-icon { width: 75px; height: 75px; background: #fffbeb; color: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px auto; font-size: 32px; border: 2px solid #fef3c7; }
@@ -36,8 +36,10 @@
         .login-input-group i { position: absolute; left: 16px; top: 16px; color: #94a3b8; font-size: 16px; }
         .login-input { width: 100%; padding: 14px 14px 14px 48px; border: 1px solid #cbd5e1; border-radius: 10px; box-sizing: border-box; font-size: 15px; transition: all 0.3s ease; background: #f8fafc; }
         .login-input:focus { border-color: var(--gold); outline: none; background: white; box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.15); }
-        .btn-login { width: 100%; background: var(--panel-left); color: var(--gold); border: 2px solid var(--gold); padding: 14px; border-radius: 10px; font-size: 16px; font-weight: bold; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .btn-login { width: 100%; background: var(--panel-left); color: var(--gold); border: 2px solid var(--gold); padding: 14px; border-radius: 10px; font-size: 16px; font-weight: bold; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 25px; }
         .btn-login:hover { background: var(--gold); color: var(--dark-blue); box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4); }
+        .login-copyright { font-size: 12px; color: #94a3b8; border-top: 1px dashed #e2e8f0; padding-top: 15px; margin-top: 5px; font-weight: 500; letter-spacing: 0.3px; }
+        .login-copyright i { font-size: 11px; margin-right: 2px; }
 
         /* DASHBOARD INDIKATOR */
         #app-content { display: none; }
@@ -149,6 +151,10 @@
             <input type="password" id="password" class="login-input" placeholder="Password">
         </div>
         <button class="btn-login" onclick="prosesLogin()"><i class="fa-solid fa-right-to-bracket"></i> Masuk Sistem</button>
+        
+        <div class="login-copyright">
+            <i class="fa-regular fa-copyright"></i> 2026 Ari Mahardika. All Rights Reserved.
+        </div>
     </div>
 </div>
 
